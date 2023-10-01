@@ -31,6 +31,7 @@ This template will play with and use the following:
 <https://stackoverflow.com/questions/60719286/actions-for-creating-venv-in-python-and-clone-a-git-repo>  
 <https://setuptools.pypa.io/en/latest/userguide/development_mode.html>  
 <https://pip.pypa.io/en/latest/topics/local-project-installs/>  
+<https://packaging.python.org/en/latest/guides/tool-recommendations/>
 
 #### The Python diaries
 
