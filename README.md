@@ -36,4 +36,4 @@ This template will play with and use the following:
 
 Everything is a decision, and there is no single recommendation that would cater to the vast majority of beginners, guiding them with best practices. What I had done in the past was simple scripts and tools, and I wanted to learn how a bigger python project should be structured, with a view to being able to easily build and package. And this to me looks harder than it should be!
 
-![The ecosystem from xkcd](https://m.xkcd.com/1987/)
+[The ecosystem from xkcd:)](https://m.xkcd.com/1987/)
