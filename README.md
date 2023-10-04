@@ -46,8 +46,8 @@ This template uses a src layout, and will iterate to use the following:
 
 #### Further reading  
 
-<https://github.com/pypa/sampleproject/tree/main>
-<https://packaging.python.org/en/latest/guides/tool-recommendations/>
+<https://github.com/pypa/sampleproject/tree/main>  
+<https://packaging.python.org/en/latest/guides/tool-recommendations/>  
 <https://packaging.python.org/en/latest/flow/>  
 <https://docs.python.org/3/tutorial/index.html>  
 
