@@ -18,7 +18,7 @@ deactivate : Deactivate virtual environment
 mkdir trial  
 cd trial  
 python -m venv env  
-python -m pip install --index-url https://test.pypi.org/simple/ --no-deps amuni-pysample==<version>   
+python -m pip install --index-url https://test.pypi.org/simple/ --no-deps amuni-pysample==x.y.z  
 TestPyPI doesnt have the pytest and streamlit versions I specify so install them manually using pip  
 python -m sample.main    
 
