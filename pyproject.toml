@@ -1,11 +1,13 @@
 # Build tools specified
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=65.5.0"]
 build-backend = "setuptools.build_meta"
 
 # Metadata for my project
 [project]
 name = "amuni_pysample"
+
+# I need to know versioning standards from PEP440
 version = "0.0.1"
 authors = [
   { name="Amisha Muni" },
@@ -15,21 +17,18 @@ readme = "README.md"
 license = {file = "LICENSE.txt"}
 requires-python = ">=3.11"
 classifiers = [
-    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
     "Operating System :: OS Independent",
+    "License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)",
 ]
 
-# Check if i need to put it all here, or use the requirements.txt dynamically
-#as per https://stackoverflow.com/questions/76771724/optional-dependencies-using-test-requirements-txt-in-pyproject-toml-with-#setupto
-# Check if test requirement like pytest should be in a separate file
-# https://packaging.python.org/en/latest/guides/tool-recommendations/
-# Also i note a pip freeze shows a ton of packages installed, probably due to streamlit
-dependencies = [
-  "streamlit",
-  "build",
-  "pytest"
-]
+# Data i dont want to specify statically
+dynamic = ["dependencies", "optional-dependencies"]
+
+# Specify my dependencies via separate files
+[tool.setuptools.dynamic]
+dependencies = {file = ["requirements.txt"]}
+#optional-dependencies.test = { file = ["test-requirements.txt"] }
 
 [project.urls]
 "Homepage" = "https://github.com/amishamuni/amuni_pysample"
-#"Bug Tracker" = "https://github.com/amishamuni/amuni_pysample/issues"
