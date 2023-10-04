@@ -1,7 +1,7 @@
 #This actually executes the code in amuni.py mainline (not within sample functions)
 print("***Running imports within main")
 
-import amuni
+from sample import amuni
 
 def main():
     print("***Running main within sample")
