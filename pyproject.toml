@@ -7,8 +7,8 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "amuni_pysample"
 
-# I need to know versioning standards from PEP440
-version = "0.1.0"
+# Versioning: MAJOR.MINOR.PATCH
+version = "0.1.1"
 authors = [
   { name="Amisha Muni" },
 ]
