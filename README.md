@@ -4,6 +4,7 @@
 Looking to up skill and have some fun building a personal AI, I started to get more serious about Python. This repo is part rant, part jotting down the choices I made after reading articles from people who know a lot more.
 
 #### Using this repo via git
+
 git clone https://github.com/amishamuni/amuni_pysample.git  
 cd amuni_pysample  
 python -m venv env : Create a virtual env    
@@ -13,10 +14,11 @@ pytest : To run the sample test or any that you add
 deactivate : Deactivate virtual environment  
 
 #### Using this repo from TestPyPI
+
 mkdir trial  
 cd trial  
 python -m venv env  
-python -m pip install --index-url https://test.pypi.org/simple/ --no-deps amuni-pysample==<version> 
+python -m pip install --index-url https://test.pypi.org/simple/ --no-deps amuni-pysample==<version>   
 TestPyPI doesnt have the pytest and streamlit versions I specify so install them manually using pip  
 python -m sample.main    
 
@@ -24,6 +26,7 @@ python -m sample.main
 #### A sample repo for python
 
 This template uses a src layout, and will iterate to use the following:  
+
 [requirements.txt](https://pip.pypa.io/en/stable/reference/requirements-file-format/) to specify the dependencies required.    
 
 [pyproject.toml](https://pip.pypa.io/en/stable/reference/build-system/pyproject-toml/) to specify project metadata and build tools in a tool agnostic format.   
