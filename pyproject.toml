@@ -8,7 +8,7 @@ build-backend = "setuptools.build_meta"
 name = "amuni_pysample"
 
 # Versioning: MAJOR.MINOR.PATCH
-version = "4.0.0"
+version = "4.0.1"
 authors = [
   { name="Amisha Muni" , email="notdisclosed@sample.com" },
 ]
