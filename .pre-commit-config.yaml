@@ -5,15 +5,15 @@ repos:
         -   id: check-yaml
         -   id: end-of-file-fixer
         -   id: trailing-whitespace
--    repo: https://github.com/astral-sh/ruff-pre-commit
+  -   repo: https://github.com/astral-sh/ruff-pre-commit
       # Ruff version.
       # Ruff added before Black as autofix is enabled
       rev: v0.0.292
       hooks:
         -   id: ruff
-            args: [ --fix, --exit-non-zero-on-fix ]       
+            args: [ --fix, --exit-non-zero-on-fix ]
   -   repo: https://github.com/psf/black
-      rev: 23.3.0
+      rev: 23.9.1
       hooks:
         -   id: black
             # It is recommended to specify the latest version of Python
@@ -21,9 +21,9 @@ repos:
             # pre-commit's default_language_version, see
             # https://pre-commit.com/#top_level-default_language_version
             language_version: python3.11
-            args: ["--line-length", "79"]            
+            args: ["--line-length", "79"]
   -   repo: https://github.com/pre-commit/mirrors-mypy
-      rev: ''  # Use the sha / tag you want to point at
+      rev: 'v1.5.1'  # Use the sha / tag you want to point at
       hooks:
         -   id: mypy
   -   repo: https://github.com/regebro/pyroma

@@ -8,13 +8,14 @@ build-backend = "setuptools.build_meta"
 name = "amuni_pysample"
 
 # Versioning: MAJOR.MINOR.PATCH
-version = "3.0.0"
+version = "4.0.0"
 authors = [
-  { name="Amisha Muni" },
+  { name="Amisha Muni" , email="notdisclosed@sample.com" },
 ]
 description = "My sample python repo"
 readme = "README.md"
 license = {file = "LICENSE"}
+keywords = ["sample", "python3"]
 requires-python = ">=3.11"
 classifiers = [
     "Development Status :: 3 - Alpha",
